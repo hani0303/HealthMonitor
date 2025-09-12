@@ -2,7 +2,7 @@
 
 ** AI 기반 통합 건강 모니터링 & 화면 최적화 프로젝트**
 
-<img src="https://github.com/hani0303/HealthMonitor/blob/main/assets/halth_img.png" width="500">
+<img src="https://github.com/hani0303/HealthMonitor/blob/main/assets/halth_img.png" width="800">
 
 ## 1. 프로젝트 개요
 
