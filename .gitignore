@@ -1,0 +1,57 @@
+# =================================================================
+# General .gitignore for Python / AI / Streamlit Projects
+# =================================================================
+
+# 1. Environments
+# -----------------
+# 가상환경 폴더는 라이브러리가 설치되는 곳이므로, 용량이 매우 크고
+# 개인 PC 환경에 따라 달라지기 때문에 절대 공유하지 않습니다.
+.venv/
+venv/
+ENV/
+env/
+
+# 2. Python cache
+# -----------------
+# 실행 속도 향상을 위해 파이썬이 자동으로 생성하는 캐시 파일들입니다.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. Sensitive Information
+# ------------------------
+# API 키와 같은 민감한 정보가 담긴 .env 파일은 절대 외부에 노출되면 안 됩니다.
+.env
+.env.*
+!.env.example  # 단, .env.example 파일은 예시이므로 공유합니다.
+
+# 4. OS-generated files
+# -----------------------
+# 각 운영체제(macOS, Windows)가 자동으로 생성하는 시스템 파일들입니다.
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 5. IDE configuration
+# --------------------
+# VSCode, PyCharm 등 개인의 코드 에디터 설정 파일은 공유할 필요가 없습니다.
+.vscode/
+.idea/
+
+# 6. Streamlit secrets
+# --------------------
+# Streamlit 클라우드 배포 시 사용되는 비밀 관리 파일입니다.
+.streamlit/secrets.toml
+
+# 7. Distribution / packaging
+# ---------------------------
+# 빌드나 배포 시 생성되는 파일들입니다.
+build/
+dist/
+*.egg-info/
+*.egg
+
